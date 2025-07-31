@@ -1,9 +1,9 @@
-🧘‍♀️ Wellness Session Platform
+🧘‍♀️ Zenflow-Wellness Session Platform
 A full-stack wellness platform where users can register, log in, create draft/published wellness sessions, and enjoy an auto-save experience — built for the Arvyax Full Stack Internship assignment.
 
 🚀 Live Demo
-🌐 Frontend:
-🔗 Backend:  [\link\]](https://wellness-server-weld.vercel.app/)
+🌐 Frontend: [[\link\](https://wellness-taupe-delta.vercel.app/)]
+🔗 Backend:  [[\link\](https://wellness-server-weld.vercel.app/)]
 
 
 📁 Folder Structure
@@ -68,9 +68,6 @@ Auto-save after 5s inactivity (bonus)
 
 💾 Database Schema
 User
-js
-Copy
-Edit
 {
   _id,
   email,
@@ -78,9 +75,6 @@ Edit
   created_at
 }
 Session
-js
-Copy
-Edit
 {
   _id,
   user_id: ObjectId,
@@ -93,42 +87,23 @@ Edit
 }
 ⚙️ Setup Instructions
 1. Clone the Repository
-bash
-Copy
-Edit
-git clone https://github.com/your-username/wellness-session-platform.git
-cd wellness-session-platform
+git clone https://github.com/LamiyaRK/Wellness.git
+cd Wellness
 2. Backend Setup
-bash
-Copy
-Edit
-cd backend
+cd Wellness-server
 npm install
 cp .env.example .env
 # Fill in your environment variables
 npm run dev
 3. Frontend Setup
-bash
-Copy
-Edit
-cd ../frontend
+cd ../Wellness-client
 npm install
-cp .env.example .env
-# Add backend API base URL
 npm run dev
 🔑 .env Variables
 .env.example for Backend
-ini
-Copy
-Edit
-PORT=5000
-MONGODB_URI=your_mongodb_connection_string
+db_name=your_mongodb_databse_name
+db_pass=your_mongodb_databse_pass
 JWT_SECRET=your_jwt_secret
-.env.example for Frontend
-ini
-Copy
-Edit
-VITE_API_BASE_URL=http://localhost:5000
 ✨ Bonus Features
 ✅ Auto-save with debounce after 5s inactivity
 
@@ -141,9 +116,9 @@ VITE_API_BASE_URL=http://localhost:5000
 ✅ Clean folder structure and reusable components
 
 👩‍💻 Author Details
-Name: Lamiya
+Name: Lamiya Rahman Khan
 
-Email: [your_email@example.com]
+Email: lamiyarahmankhan01@gmail.com
 
 Internship Role: Full Stack Developer Intern
 
